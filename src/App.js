@@ -53,7 +53,7 @@ const App = () => {
         </div>
       </>
       <div className={styles.error}>
-        {isError && <ErrorModalWindow header={"Error!"} body={"Filed can't be empty"}/>}
+        {isError && <ErrorModalWindow header={"Error!"} body={"Field can't be empty"}/>}
       </div>
       {loader && <Loader/>}
       {
