@@ -7,13 +7,15 @@ import axios from "axios";
 import ErrorModalWindow from "./UI/Errors";
 import Loader from "./UI/Loader/Loader";
 
+import template from "./template.json";
+
 const App = () => {
   const authorGithubURL = "https://github.com/IvanBelikov";
   const apiOriginalURL = "https://sentim-api.herokuapp.com/";
   const apiURL = "https://sentim-api.herokuapp.com/api/v1/";
 
   const [analysisResult, setAnalysisResult] = useState({});
-  const [text, setText] = useState("");
+  const [text, setText] = useState(template.temp);
   const [isError, setIsError] = useState(false);
   const [loader, setLoader] = useState(false);
 
